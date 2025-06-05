@@ -17,17 +17,7 @@
     <PackageReference Include="WebDriverManager" Version="2.17.5" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Drivers\" />
-    <Folder Include="Support\" />
-  </ItemGroup>
+  
 
-<ItemGroup>
-<PackageReference Include="Reqnroll.Tools.MsBuild.Generation" Version="*" PrivateAssets="All" />
-</ItemGroup>
- 
-<PropertyGroup>
-<ReqnrollGenerateFeatureFiles>true</ReqnrollGenerateFeatureFiles>
-</PropertyGroup>
 
 </Project>

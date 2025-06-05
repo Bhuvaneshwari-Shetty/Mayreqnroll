@@ -875,13 +875,14 @@
           "build/_._": {}
         }
       },
-      "Reqnroll/2.4.1": {
+      "Reqnroll/2.2.1": {
         "type": "package",
         "dependencies": {
           "Cucumber.CucumberExpressions": "17.1.0",
           "Gherkin": "30.0.0",
           "Microsoft.Extensions.DependencyModel": "8.0.2",
-          "System.Text.Json": "8.0.5"
+          "SpecFlow.Internal.Json": "1.0.8",
+          "System.Runtime.Loader": "4.3.0"
         },
         "compile": {
           "lib/netstandard2.0/Reqnroll.dll": {
@@ -915,10 +916,10 @@
           "build/Reqnroll.MsTest.targets": {}
         }
       },
-      "Reqnroll.Tools.MsBuild.Generation/2.4.1": {
+      "Reqnroll.Tools.MsBuild.Generation/2.2.1": {
         "type": "package",
         "dependencies": {
-          "Reqnroll": "[2.4.1]"
+          "Reqnroll": "[2.2.1]"
         },
         "build": {
           "build/Reqnroll.Tools.MsBuild.Generation.props": {},
@@ -955,6 +956,15 @@
           "lib/net6.0/ICSharpCode.SharpZipLib.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "SpecFlow.Internal.Json/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SpecFlow.Internal.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SpecFlow.Internal.Json.dll": {}
         }
       },
       "System.Collections.Immutable/5.0.0": {
@@ -1084,7 +1094,7 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {
+          "ref/netstandard1.5/System.IO.dll": {
             "related": ".xml"
           }
         }
@@ -1099,7 +1109,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {
+          "ref/netstandard1.5/System.Reflection.dll": {
             "related": ".xml"
           }
         }
@@ -1125,7 +1135,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {
+          "ref/netstandard1.0/System.Reflection.Primitives.dll": {
             "related": ".xml"
           }
         }
@@ -1197,6 +1207,22 @@
           "ref/netcoreapp1.1/_._": {}
         }
       },
+      "System.Runtime.Loader/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Loader.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
+        }
+      },
       "System.Security.AccessControl/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -1251,7 +1277,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
+          "ref/netstandard1.3/System.Text.Encoding.dll": {
             "related": ".xml"
           }
         }
@@ -1278,22 +1304,6 @@
           }
         }
       },
-      "System.Text.Json/8.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/System.Text.Json.targets": {}
-        }
-      },
       "System.Threading/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1317,7 +1327,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
+          "ref/netstandard1.3/System.Threading.Tasks.dll": {
             "related": ".xml"
           }
         }
@@ -2753,10 +2763,10 @@
         "nunit.nuspec"
       ]
     },
-    "Reqnroll/2.4.1": {
-      "sha512": "Ui229q21Kmkrv3L89THgsxGMXooJGK5OrFPLvYDXfE2nO/u4tqYsbmMRddyEE3fsR40IDP++HsRrDxlkR6reVw==",
+    "Reqnroll/2.2.1": {
+      "sha512": "v83D63zou3tsmcPp1MV0CLgt0DzThJwVm941ZSOHHNMnY7TbxBMWDimMifORjbhlukA6CQSNy+u0/Tx3d3Kaxg==",
       "type": "package",
-      "path": "reqnroll/2.4.1",
+      "path": "reqnroll/2.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2771,7 +2781,7 @@
         "lib/netstandard2.0/Reqnroll.ExternalAnnotations.xml",
         "lib/netstandard2.0/Reqnroll.dll",
         "lib/netstandard2.0/Reqnroll.xml",
-        "reqnroll.2.4.1.nupkg.sha512",
+        "reqnroll.2.2.1.nupkg.sha512",
         "reqnroll.nuspec"
       ]
     },
@@ -2794,10 +2804,10 @@
         "reqnroll.mstest.nuspec"
       ]
     },
-    "Reqnroll.Tools.MsBuild.Generation/2.4.1": {
-      "sha512": "+Up0eUWnKRKPdRIttE52DYzwayUd4bGMyRytYeeCwtqwZA4tLhK2NspOZJ8axPcmATOM9QSTCUHUlyp9pgcfQg==",
+    "Reqnroll.Tools.MsBuild.Generation/2.2.1": {
+      "sha512": "A8a5dcZXfk3UlRJur9XzkJsBNHr/hwrHEzCYdJe1VUV1/NsN4cPK+S+7DV0haR4sJ2PfDhqds3FOK4rVRNDXmQ==",
       "type": "package",
-      "path": "reqnroll.tools.msbuild.generation/2.4.1",
+      "path": "reqnroll.tools.msbuild.generation/2.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2813,7 +2823,7 @@
         "licenses/Cucumber.CucumberExpressions-LICENSE-MIT.txt",
         "licenses/Gherkin-LICENSE-MIT.txt",
         "licenses/SpecFlow.Internal.Json-LICENSE-MIT.txt",
-        "reqnroll.tools.msbuild.generation.2.4.1.nupkg.sha512",
+        "reqnroll.tools.msbuild.generation.2.2.1.nupkg.sha512",
         "reqnroll.tools.msbuild.generation.nuspec",
         "tasks/net462/CucumberExpressions.dll",
         "tasks/net462/Gherkin.dll",
@@ -2830,6 +2840,7 @@
         "tasks/net462/Reqnroll.Tools.MsBuild.Generation.dll",
         "tasks/net462/Reqnroll.Utils.dll",
         "tasks/net462/Reqnroll.dll",
+        "tasks/net462/SpecFlow.Internal.Json.dll",
         "tasks/net462/System.AppContext.dll",
         "tasks/net462/System.Buffers.dll",
         "tasks/net462/System.CodeDom.dll",
@@ -2947,43 +2958,13 @@
         "tasks/net462/netstandard.dll",
         "tasks/netstandard2.0/CucumberExpressions.dll",
         "tasks/netstandard2.0/Gherkin.dll",
-        "tasks/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "tasks/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
-        "tasks/netstandard2.0/Microsoft.NET.StringTools.dll",
-        "tasks/netstandard2.0/Microsoft.VisualStudio.Composition.dll",
-        "tasks/netstandard2.0/Microsoft.VisualStudio.Threading.dll",
-        "tasks/netstandard2.0/Microsoft.VisualStudio.Validation.dll",
-        "tasks/netstandard2.0/Microsoft.Win32.Registry.dll",
         "tasks/netstandard2.0/Reqnroll.Generator.dll",
         "tasks/netstandard2.0/Reqnroll.Parser.dll",
         "tasks/netstandard2.0/Reqnroll.Tools.MsBuild.Generation.deps.json",
         "tasks/netstandard2.0/Reqnroll.Tools.MsBuild.Generation.dll",
         "tasks/netstandard2.0/Reqnroll.Utils.dll",
         "tasks/netstandard2.0/Reqnroll.dll",
-        "tasks/netstandard2.0/System.Buffers.dll",
-        "tasks/netstandard2.0/System.CodeDom.dll",
-        "tasks/netstandard2.0/System.Collections.Immutable.dll",
-        "tasks/netstandard2.0/System.ComponentModel.Composition.dll",
-        "tasks/netstandard2.0/System.Composition.AttributedModel.dll",
-        "tasks/netstandard2.0/System.Composition.Convention.dll",
-        "tasks/netstandard2.0/System.Composition.Hosting.dll",
-        "tasks/netstandard2.0/System.Composition.Runtime.dll",
-        "tasks/netstandard2.0/System.Composition.TypedParts.dll",
-        "tasks/netstandard2.0/System.Configuration.ConfigurationManager.dll",
-        "tasks/netstandard2.0/System.Memory.dll",
-        "tasks/netstandard2.0/System.Numerics.Vectors.dll",
-        "tasks/netstandard2.0/System.Reflection.Emit.ILGeneration.dll",
-        "tasks/netstandard2.0/System.Reflection.Emit.dll",
-        "tasks/netstandard2.0/System.Reflection.Metadata.dll",
-        "tasks/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "tasks/netstandard2.0/System.Security.AccessControl.dll",
-        "tasks/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "tasks/netstandard2.0/System.Security.Principal.Windows.dll",
-        "tasks/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "tasks/netstandard2.0/System.Text.Encodings.Web.dll",
-        "tasks/netstandard2.0/System.Text.Json.dll",
-        "tasks/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
-        "tasks/netstandard2.0/System.Threading.Tasks.Extensions.dll"
+        "tasks/netstandard2.0/SpecFlow.Internal.Json.dll"
       ]
     },
     "Selenium.WebDriver/4.33.0": {
@@ -3027,6 +3008,20 @@
         "lib/netstandard2.1/ICSharpCode.SharpZipLib.xml",
         "sharpziplib.1.4.2.nupkg.sha512",
         "sharpziplib.nuspec"
+      ]
+    },
+    "SpecFlow.Internal.Json/1.0.8": {
+      "sha512": "lVCC/Rie7N5rFoc7YxPS0nneLfsWSTIMMlkndwxhaD8MxBp3Bsv1HeiVjVwXCjWaQeoqZcvIy52fF5Xit00ZLw==",
+      "type": "package",
+      "path": "specflow.internal.json/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net45/SpecFlow.Internal.Json.dll",
+        "lib/netstandard2.0/SpecFlow.Internal.Json.dll",
+        "specflow.internal.json.1.0.8.nupkg.sha512",
+        "specflow.internal.json.nuspec"
       ]
     },
     "System.Collections.Immutable/5.0.0": {
@@ -3939,6 +3934,38 @@
         "system.runtime.interopservices.nuspec"
       ]
     },
+    "System.Runtime.Loader/4.3.0": {
+      "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "type": "package",
+      "path": "system.runtime.loader/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/_._",
+        "lib/netstandard1.5/System.Runtime.Loader.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/netstandard1.5/System.Runtime.Loader.dll",
+        "ref/netstandard1.5/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/de/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/es/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/fr/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/it/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ja/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ko/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ru/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.Loader.xml",
+        "system.runtime.loader.4.3.0.nupkg.sha512",
+        "system.runtime.loader.nuspec"
+      ]
+    },
     "System.Security.AccessControl/5.0.0": {
       "sha512": "dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
       "type": "package",
@@ -4151,79 +4178,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Json/8.0.5": {
-      "sha512": "0f1B50Ss7rqxXiaBJyzUu9bWFOO2/zSlifZ/UNMdiIpDYe4cY4LQQicP4nirK1OS31I43rn062UIJ1Q9bpmHpg==",
-      "type": "package",
-      "path": "system.text.json/8.0.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
-        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
-        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll",
-        "analyzers/dotnet/roslyn4.4/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/de/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/es/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/it/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
-        "buildTransitive/net461/System.Text.Json.targets",
-        "buildTransitive/net462/System.Text.Json.targets",
-        "buildTransitive/net6.0/System.Text.Json.targets",
-        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
-        "buildTransitive/netstandard2.0/System.Text.Json.targets",
-        "lib/net462/System.Text.Json.dll",
-        "lib/net462/System.Text.Json.xml",
-        "lib/net6.0/System.Text.Json.dll",
-        "lib/net6.0/System.Text.Json.xml",
-        "lib/net7.0/System.Text.Json.dll",
-        "lib/net7.0/System.Text.Json.xml",
-        "lib/net8.0/System.Text.Json.dll",
-        "lib/net8.0/System.Text.Json.xml",
-        "lib/netstandard2.0/System.Text.Json.dll",
-        "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.8.0.5.nupkg.sha512",
-        "system.text.json.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "System.Threading/4.3.0": {
       "sha512": "VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
       "type": "package",
@@ -4387,7 +4341,6 @@
       "MSTest.TestFramework >= 3.4.3",
       "Microsoft.NET.Test.Sdk >= 17.10.0",
       "Reqnroll.MsTest >= 2.2.1",
-      "Reqnroll.Tools.MsBuild.Generation >= *",
       "Selenium.WebDriver >= 4.33.0",
       "WebDriverManager >= 2.17.5"
     ]
@@ -4466,11 +4419,6 @@
             "target": "Package",
             "version": "[2.2.1, )"
           },
-          "Reqnroll.Tools.MsBuild.Generation": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[*, )"
-          },
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.33.0, )"
@@ -4499,27 +4447,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Reqnroll.MsTest 2.2.1 requires Reqnroll (= 2.2.1) but version Reqnroll 2.4.1 was resolved.",
-      "libraryId": "Reqnroll",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Reqnroll.MsTest 2.2.1 requires Reqnroll.Tools.MsBuild.Generation (= 2.2.1) but version Reqnroll.Tools.MsBuild.Generation 2.4.1 was resolved.",
-      "libraryId": "Reqnroll.Tools.MsBuild.Generation",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }
