@@ -14,7 +14,6 @@
           "MSTest.TestFramework": "3.4.3",
           "Microsoft.NET.Test.Sdk": "17.10.0",
           "Reqnroll.MsTest": "2.2.1",
-          "Reqnroll.Tools.MsBuild.Generation": "2.4.1",
           "Selenium.WebDriver": "4.33.0",
           "WebDriverManager": "2.17.5",
           "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions": "14.0.0.0"
@@ -53,7 +52,7 @@
         "dependencies": {
           "Allure.Net.Commons": "2.12.1",
           "CsvHelper": "32.0.3",
-          "Reqnroll": "2.4.1",
+          "Reqnroll": "2.2.1",
           "System.Collections.Specialized": "4.3.0"
         },
         "runtime": {
@@ -701,12 +700,13 @@
           }
         }
       },
-      "Reqnroll/2.4.1": {
+      "Reqnroll/2.2.1": {
         "dependencies": {
           "Cucumber.CucumberExpressions": "17.1.0",
           "Gherkin": "30.0.0",
           "Microsoft.Extensions.DependencyModel": "8.0.2",
-          "System.Text.Json": "8.0.5"
+          "SpecFlow.Internal.Json": "1.0.8",
+          "System.Runtime.Loader": "4.3.0"
         },
         "runtime": {
           "lib/netstandard2.0/Reqnroll.dll": {
@@ -718,8 +718,8 @@
       "Reqnroll.MsTest/2.2.1": {
         "dependencies": {
           "MSTest.TestFramework": "3.4.3",
-          "Reqnroll": "2.4.1",
-          "Reqnroll.Tools.MsBuild.Generation": "2.4.1"
+          "Reqnroll": "2.2.1",
+          "Reqnroll.Tools.MsBuild.Generation": "2.2.1"
         },
         "runtime": {
           "lib/netstandard2.0/Reqnroll.MSTest.ReqnrollPlugin.dll": {
@@ -728,9 +728,9 @@
           }
         }
       },
-      "Reqnroll.Tools.MsBuild.Generation/2.4.1": {
+      "Reqnroll.Tools.MsBuild.Generation/2.2.1": {
         "dependencies": {
-          "Reqnroll": "2.4.1"
+          "Reqnroll": "2.2.1"
         }
       },
       "Selenium.WebDriver/4.33.0": {
@@ -746,6 +746,14 @@
           "lib/net6.0/ICSharpCode.SharpZipLib.dll": {
             "assemblyVersion": "1.4.2.13",
             "fileVersion": "1.4.2.13"
+          }
+        }
+      },
+      "SpecFlow.Internal.Json/1.0.8": {
+        "runtime": {
+          "lib/netstandard2.0/SpecFlow.Internal.Json.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.8.28882"
           }
         }
       },
@@ -861,6 +869,13 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
+      "System.Runtime.Loader/4.3.0": {
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.Security.AccessControl/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -876,7 +891,6 @@
         }
       },
       "System.Text.Encoding.CodePages/8.0.0": {},
-      "System.Text.Json/8.0.5": {},
       "System.Threading/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0",
@@ -1116,12 +1130,12 @@
       "path": "nunit/3.13.3",
       "hashPath": "nunit.3.13.3.nupkg.sha512"
     },
-    "Reqnroll/2.4.1": {
+    "Reqnroll/2.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ui229q21Kmkrv3L89THgsxGMXooJGK5OrFPLvYDXfE2nO/u4tqYsbmMRddyEE3fsR40IDP++HsRrDxlkR6reVw==",
-      "path": "reqnroll/2.4.1",
-      "hashPath": "reqnroll.2.4.1.nupkg.sha512"
+      "sha512": "sha512-v83D63zou3tsmcPp1MV0CLgt0DzThJwVm941ZSOHHNMnY7TbxBMWDimMifORjbhlukA6CQSNy+u0/Tx3d3Kaxg==",
+      "path": "reqnroll/2.2.1",
+      "hashPath": "reqnroll.2.2.1.nupkg.sha512"
     },
     "Reqnroll.MsTest/2.2.1": {
       "type": "package",
@@ -1130,12 +1144,12 @@
       "path": "reqnroll.mstest/2.2.1",
       "hashPath": "reqnroll.mstest.2.2.1.nupkg.sha512"
     },
-    "Reqnroll.Tools.MsBuild.Generation/2.4.1": {
+    "Reqnroll.Tools.MsBuild.Generation/2.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+Up0eUWnKRKPdRIttE52DYzwayUd4bGMyRytYeeCwtqwZA4tLhK2NspOZJ8axPcmATOM9QSTCUHUlyp9pgcfQg==",
-      "path": "reqnroll.tools.msbuild.generation/2.4.1",
-      "hashPath": "reqnroll.tools.msbuild.generation.2.4.1.nupkg.sha512"
+      "sha512": "sha512-A8a5dcZXfk3UlRJur9XzkJsBNHr/hwrHEzCYdJe1VUV1/NsN4cPK+S+7DV0haR4sJ2PfDhqds3FOK4rVRNDXmQ==",
+      "path": "reqnroll.tools.msbuild.generation/2.2.1",
+      "hashPath": "reqnroll.tools.msbuild.generation.2.2.1.nupkg.sha512"
     },
     "Selenium.WebDriver/4.33.0": {
       "type": "package",
@@ -1150,6 +1164,13 @@
       "sha512": "sha512-yjj+3zgz8zgXpiiC3ZdF/iyTBbz2fFvMxZFEBPUcwZjIvXOf37Ylm+K58hqMfIBt5JgU/Z2uoUS67JmTLe973A==",
       "path": "sharpziplib/1.4.2",
       "hashPath": "sharpziplib.1.4.2.nupkg.sha512"
+    },
+    "SpecFlow.Internal.Json/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lVCC/Rie7N5rFoc7YxPS0nneLfsWSTIMMlkndwxhaD8MxBp3Bsv1HeiVjVwXCjWaQeoqZcvIy52fF5Xit00ZLw==",
+      "path": "specflow.internal.json/1.0.8",
+      "hashPath": "specflow.internal.json.1.0.8.nupkg.sha512"
     },
     "System.Collections.Immutable/5.0.0": {
       "type": "package",
@@ -1263,6 +1284,13 @@
       "path": "system.runtime.interopservices/4.3.0",
       "hashPath": "system.runtime.interopservices.4.3.0.nupkg.sha512"
     },
+    "System.Runtime.Loader/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "path": "system.runtime.loader/4.3.0",
+      "hashPath": "system.runtime.loader.4.3.0.nupkg.sha512"
+    },
     "System.Security.AccessControl/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1290,13 +1318,6 @@
       "sha512": "sha512-OZIsVplFGaVY90G2SbpgU7EnCoOO5pw1t4ic21dBF3/1omrJFpAGoNAVpPyMVOC90/hvgkGG3VFqR13YgZMQfg==",
       "path": "system.text.encoding.codepages/8.0.0",
       "hashPath": "system.text.encoding.codepages.8.0.0.nupkg.sha512"
-    },
-    "System.Text.Json/8.0.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0f1B50Ss7rqxXiaBJyzUu9bWFOO2/zSlifZ/UNMdiIpDYe4cY4LQQicP4nirK1OS31I43rn062UIJ1Q9bpmHpg==",
-      "path": "system.text.json/8.0.5",
-      "hashPath": "system.text.json.8.0.5.nupkg.sha512"
     },
     "System.Threading/4.3.0": {
       "type": "package",
